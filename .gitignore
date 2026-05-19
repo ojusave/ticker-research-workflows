@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+.DS_Store
+ui/dist/
+tasks/dist/
+server/dist/
+shared/types.js
+shared/types.d.ts

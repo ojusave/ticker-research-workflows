@@ -1,0 +1,16 @@
+{
+  "name": "ticker-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:tasks": "cd tasks && npm run dev",
+    "dev:ui": "cd ui && npm run dev",
+    "build": "cd ui && npm install && npm run build && cd ../tasks && npm install && npm run build && cd ../server && npm install && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

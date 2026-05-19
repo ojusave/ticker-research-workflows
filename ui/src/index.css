@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body.portal-dark {
+    @apply h-full overflow-hidden bg-[#0a0a0a] text-[#e5e5e5] antialiased;
+  }
+
+  #root {
+    @apply h-full;
+  }
+}
+
+@layer utilities {
+  .animate-pulse-violet {
+    animation: pulse-violet 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse-violet {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

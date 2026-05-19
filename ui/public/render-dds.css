@@ -1,0 +1,96 @@
+/* Pulled from https://github.com/R4ph-t/DDS (dist/styles/theme.css) plus demo control classes */
+
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #18181b;
+  --color-card: #ffffff;
+  --color-card-foreground: #18181b;
+  --color-primary: #9333ea;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+  --color-destructive: #ef4444;
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+  --color-input-background: #fafafa;
+  --color-ring: #9333ea;
+}
+
+body.portal-dark {
+  --color-background: #0a0a0a;
+  --color-foreground: #e5e5e5;
+  --color-card: #0a0a0a;
+  --color-card-foreground: #e5e5e5;
+  --color-primary: #8b5cf6;
+  --color-primary-foreground: #0a0a0a;
+  --color-muted: #171717;
+  --color-muted-foreground: #a3a3a3;
+  --color-accent: #171717;
+  --color-accent-foreground: #e5e5e5;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-input: rgba(255, 255, 255, 0.1);
+  --color-input-background: #171717;
+  --color-ring: #8b5cf6;
+}
+
+.dds-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.dds-btn-primary:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+.dds-btn-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.dds-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-foreground);
+}
+
+body.portal-dark .dds-btn-ghost {
+  color: #e5e5e5;
+}
+
+.dds-btn-ghost:hover:not(:disabled) {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+.dds-btn-ghost:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.dds-card {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card);
+  color: var(--color-card-foreground);
+  border-radius: 0;
+}
